@@ -1,0 +1,31 @@
+<table>
+    <thead>
+        <tr>
+            <th>Naziv</th>
+            <th>Igrac</th>
+            <th>Trener</th>
+            <th>Godina_osnutka</th>
+            <th>Vlasnik</th>
+            <th>Liga</th>
+            <th>Sponzor</th>
+            <th>Vrijednost_kluba</th>
+            <th>Stadion</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach($klubovi as $k): ?>
+            <tr>
+                <td><?=$k->naziv?></td>
+                <td><?=$k->igrac?></td>
+                <td><?=$k->trener?></td>
+                <td><?=$k->godina_osnutka?></td>
+                <td><?=$k->vlasnik?></td>
+                <td><?=$k->liga?></td>
+                <td><?=$k->sponzor?></td>
+                <td><?=$k->vrijednost_kluba?></td>
+                <td><?=$k->stadion?></td>
+                               
+            </tr>
+        <?php endforeach;?>
+    </tbody>
+</table>
